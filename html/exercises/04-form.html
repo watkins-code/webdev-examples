@@ -1,60 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Exercise 04 - Form</title>
-</head>
-
-<body>
-  <main>
-    <form action="">
-      <h1>Form</h1>
-      <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" />
-      </div>
-      <div>
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" />
-      </div>
-      <br />
-      <fieldset>
-        <legend>Favorite Character:</legend>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exercise 04 - Form</title>
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <h1>Form</h1>
         <div>
-          <input type="radio" id="spongebob" name="spongebob" />
-          <label for="radio">Spongebob</label>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="full name" />
         </div>
         <div>
-          <input type="radio" id="sandy" name="sandy" />
-          <label for="radio">Sandy</label>
+          <label for="email">Email:</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="email@email.com"
+          />
         </div>
-        <div>
-          <input type="radio" id="patrick" name="patrick" />
-          <label for="radio">Patrick</label>
-        </div>
-      </fieldset>
         <br />
-      <fieldset>
-        <legend>Are you a fan of the show?</legend>
+        <fieldset>
+          <legend>Favorite Character:</legend>
+          <div>
+            <input
+              type="radio"
+              id="spongebob"
+              name="character"
+              value="spongebob"
+            />
+            <label for="spongebob">Spongebob</label>
+          </div>
+          <div>
+            <input type="radio" id="sandy" name="character" value="sandy" />
+            <label for="sandy">Sandy</label>
+          </div>
+          <div>
+            <input type="radio" id="patrick" name="character" value="patrick" />
+            <label for="patrick">Patrick</label>
+          </div>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Are you a fan of the show?</legend>
+          <div>
+            <input
+              type="checkbox"
+              id="watched-all"
+              name="episodes"
+              value="yes"
+            />
+            <label for="watched-all"
+              >Yes, I have watched all the episodes!</label
+            >
+          </div>
+          <div>
+            <input type="checkbox" id="memes" name="episodes" value="yes" />
+            <label for="memes">Yes, it's got the best memes. </label>
+          </div>
+        </fieldset>
+        <br />
         <div>
-          <input type="checkbox" id="watched-all" name="watched-all" />
-          <label for="watched-all">Yes, I have watched all the episodes!</label>
-        </div>
-        <div>
-          <input type="checkbox" id="memes" name="memes" />
-          <label for="memes">Yes, it's got the best memes. </label>
-        </div>
-      </fieldset>
-      <br />
-      <div>
           <input type="submit" value="Submit" />
           <input type="reset" value="Reset" />
         </div>
-    </form>
-  </main>
-</body>
-
+      </form>
+    </main>
+  </body>
 </html>
