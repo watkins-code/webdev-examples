@@ -1,21 +1,45 @@
 /* CSS custom properties / CSS variables */
 
+/*colors were altered from the original, because I could not tell
+them apart*/
+
 :root {
   --darkmagenta: #8b008b;
   --magenta: #ff00ff;
   --royalblue: #4169e1;
-  --teal: #008080;
+  --teal: #02c4c4;
   --violet: #9400d3;
+  --green: #04ac04;
 }
 
 /* Use attribute selectors for the first part of the exercise */
 
-li[class] {
-  color: var(--red);
+li[id^='c']{
+color: var(--teal);
+}
+
+li[class*="rr"] {
+  color: var(--green);
+}
+
+li[class*='do'] {
+  color: var(--royalblue);
+}
+
+li[class$="og"] {
+  color: var(--magenta);
 }
 
 /* Use descendant, child, and sibling selectors for the second part */
 
 section li {
   color: var(--green);
+}
+
+.first ~ li {
+  color: var(--magenta);
+}
+
+.second + li {
+  color: var(--royalblue);
 }

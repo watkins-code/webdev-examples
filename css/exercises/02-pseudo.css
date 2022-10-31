@@ -2,3 +2,16 @@
   width: 600px;
   margin: 40px auto;
 }
+
+p::first-letter{
+  font-size:3em;
+}
+
+
+
+
+/* I saw the :hover in the solutions, but the .md file doesn't mention
+anything about it (snapshot doesn't show a hover color) */
+p:hover {
+  background-color: var(--lavender);
+}
